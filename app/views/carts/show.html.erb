@@ -3,9 +3,10 @@
   <header class="page-header">
     <% if enhanced_cart.count == 0 %>
     <div class="alert alert-primary" role="alert">
-      Your cart is empty. Please click the link below to continue shopping.
+      Your cart is empty.
       </div>
-      <%= link_to 'Continue Shopping', products_path %>
+      <br>
+      <%= link_to "Continue Shopping", products_path, class: 'btn btn-lg btn-primary' %>
     </header>
     <% end %>
 
