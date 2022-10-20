@@ -1,2 +1,12 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<br>
+<br>
+<h1>Admin Dashboard</h1>
+<br>
+<div class="alert alert-info" role="alert">
+  Total number of products: &nbsp &nbsp <%= @product_count %>
+  <br>
+  Total number of categories: &nbsp <%= @category_count %>
+</div>
+<br>
+
+<%= link_to "View Products", admin_products_path, class: 'btn btn-lg btn-primary' %>
