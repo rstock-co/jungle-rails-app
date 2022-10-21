@@ -64,8 +64,8 @@
           </ul>
         </li>
         <% if current_user %>
-              <li style="margin-top: 4%">Signed in as <%= current_user.name %></li>
-              <li><%= link_to "Logout", '/logout' %></li>
+              <li class="nav-link" >Signed in as <%= current_user.name %></li>
+              <li><%= link_to "Logout", '/logout', class: "nav-link" %></li>
           <% else %>
               <li><%= link_to 'Login', '/login', class: "nav-link" %></li>
               <li><%= link_to 'Signup', '/signup', class: "nav-link" %></li>
