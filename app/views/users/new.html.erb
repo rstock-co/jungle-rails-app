@@ -1,0 +1,10 @@
+<h1 style="margin-top: 1em">Signup!</h1>
+
+<%= form_for :user, url: '/users' do |f| %>
+
+  Name: <%= f.text_field :name, class: "form-control mb-4 w-25" %>
+  Email: <%= f.text_field :email, class: "form-control mb-4 w-25" %>
+  Password: <%= f.password_field :password, class: "form-control mb-4 w-25" %>
+  Password Confirmation: <%= f.password_field :password_confirmation, class: "form-control mb-4 w-25" %>
+  <%= f.submit "Submit", class: "btn btn-success" %>
+<% end %>
