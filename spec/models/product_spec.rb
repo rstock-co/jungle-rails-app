@@ -7,7 +7,7 @@ RSpec.describe Product, type: :model do
     @product = Product.new(name: 'Jurassic Plant', price: 199, quantity: 25, category: @category)
   end
 
-  describe 'Validations' do
+  describe 'Product Validations' do
     it 'should save when all 4 fields are set properly' do
       @product.save!
       expect(@product).to be_valid
