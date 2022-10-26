@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Thank you for your order, <%= @user.name %></h1>
+    <p>
+      You have successfully placed an order, your Order # is: <%= @order.id %>.
+    </p>
+    <p>
+      To view your order receipt, just follow this link: <%= @url %>.
+    </p>
+    <p>
+      To continue shopping, visit: http://localhost:3000/.
+    </p>
+    <p>
+    Thank you for shopping at the Jungle, and have a great day!
+    </p>
+  </body>
+</html>

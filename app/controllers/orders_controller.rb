@@ -51,6 +51,8 @@ class OrdersController < ApplicationController
       )
     end
     order.save!
+    # Tell the OrderMailer to send the order receipt after save
+    OrderMailer.with(order:, user: current_user).order_email.deliver_later
     order
   end
 end
