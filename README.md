@@ -1,6 +1,22 @@
 # Jungle
 
-A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
+A mini e-commerce application built with Rails 6.1.
+
+## Extra Features
+
+Stretch features implemented include
+- **Auto Order Confirmation Email**:  When the user places an order, an email subject and body is automatically generated and is ready to send.
+- **User Login Testing w/ Cypress**: Extra test to ensure the user can successfully login using the UI.
+
+## Final Product
+
+!["Main"](/docs/Main.png)
+<br/><br/>
+!["Products"](/docs/Products.png)
+<br/><br/>
+!["Cart"](/docs/Cart.png)
+<br/><br/>
+!["Checkout"](/docs/Checkout.png)
 
 ## Setup
 
