@@ -17,6 +17,8 @@ Stretch features implemented include
 !["Cart"](/docs/Cart.png)
 <br/><br/>
 !["Checkout"](/docs/Checkout.png)
+<br/><br/>
+!["Sold Out"](/docs/Sold_Out.png)
 
 ## Setup
 
