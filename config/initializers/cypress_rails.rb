@@ -4,7 +4,7 @@ DatabaseCleaner.strategy = :truncation
 return unless Rails.env.test?
 
 CypressRails.hooks.before_server_start do
-  # Called once, before either the transaction or the server is started
+  # CalleFd once, before either the transaction or the server is started
   cat1 = Category.find_or_create_by! name: 'Evergreens'
 
   cat1.products.create!({
@@ -23,6 +23,13 @@ CypressRails.hooks.before_server_start do
                           quantity: 18,
                           price: 24.99
                         })
+
+  User.create!({
+                 name: 'Richard Stock',
+                 email: 'richard@gmail.com',
+                 password: 'password',
+                 password_confirmation: 'password'
+               })
 end
 
 CypressRails.hooks.after_transaction_start do
